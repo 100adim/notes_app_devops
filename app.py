@@ -51,7 +51,6 @@ def get_notes():
 
     return jsonify(notes), 200
 
-@app.route('/note/<int:note_id>', methods=['DELETE'])
 def delete_note(note_id):
     note_key = f'note:{note_id}'
     note_json = r.get(note_key)
@@ -64,6 +63,10 @@ def delete_note(note_id):
     r.srem(f'tag:{note_data["tag"]}', note_id)
 
     return jsonify({'message': 'Note deleted'}), 200
+
+@app.route("/about")
+def about():
+    return {"message": "This is part of Adi & Roni's Devops project"}
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
