@@ -27,5 +27,5 @@ Make sure Docker and Docker Compose are installed.
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/100adim/notes_app_devops.git
 cd notes_app_devops
