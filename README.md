@@ -1,6 +1,7 @@
 # Notes App with Flask, Redis and Docker
 
 This project implements a simple notes management service using **Flask** (Python), **Redis**, and **Docker Compose**.
+This project was created as part of a Devops assignment
 
 ## 🧩 Features
 
