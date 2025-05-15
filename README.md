@@ -27,7 +27,7 @@ Make sure Docker and Docker Compose are installed.
 1. Clone the repo:
 git clone https://github.com/100adim/notes_app_devops.git
 cd notes_app_devops
-
+Once running, the application will be accessible at: http://localhost:5000
 
 ## System Architecture
 
