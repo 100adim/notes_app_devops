@@ -69,4 +69,4 @@ def about():
     return {"message": "This is part of Adi & Roni's Devops project"}
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000) 
