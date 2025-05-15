@@ -25,7 +25,6 @@ It was developed as part of a DevOps course assignment.
 Make sure Docker and Docker Compose are installed.
 
 1. Clone the repo:
-```bash
 git clone https://github.com/100adim/notes_app_devops.git
 cd notes_app_devops
 
