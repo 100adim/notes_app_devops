@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 r = redis.Redis(host='redis', port=6379, decode_responses=True)
 
-# יצירת מזהה חדש לפתקים
+
 def get_next_id():
     return r.incr("next_note_id")
 
@@ -40,7 +40,6 @@ def get_notes():
     if tag_filter:
         note_ids = r.smembers(f'tag:{tag_filter}')
     else:
-        # נאחזר את כל המפתחות שמתחילים ב-note:
         note_keys = r.keys('note:*')
         note_ids = [key.split(':')[1] for key in note_keys]
 
@@ -64,9 +63,11 @@ def delete_note(note_id):
 
     return jsonify({'message': 'Note deleted'}), 200
 
+                  
 @app.route("/about")
 def about():
     return {"message": "This is part of Adi & Roni's Devops project"}
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
