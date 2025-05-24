@@ -1,4 +1,4 @@
-version: '3'
+version: '3' # not realy needed
 
 services:
   web:
@@ -7,15 +7,15 @@ services:
       - "5000:5000"
     depends_on:
       - redis
-    volumes:
-      - .:/app
+    volumes: # volume is not needed here
+      - .:/app 
 
   redis:
     image: redis:7
     ports:
       - "6379:6379"
     volumes:
-      - redis_data:/data
+      - redis_data:/data # I asked to add the mapped volume for Redis data persistence in the repository (should be a file mapped to the container)
 
-volumes:
+volumes: 
   redis_data:

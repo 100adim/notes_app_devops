@@ -1,3 +1,6 @@
+There is no description of what the project is about.
+The project is not orgenized
+
 # Notes App with Flask, Redis and Docker
 
 This is a simple notes app built using **Flask**, **Redis**, and **Docker Compose**.  
@@ -5,9 +8,9 @@ It was developed as part of a DevOps course assignment.
 
 ## Features
 
-- Add a note (`POST /note`)
+- Add a note (`POST /note`) - missing explenation of how to make this call
 - View all notes (`GET /notes`)
-- Delete a note (`DELETE /note/<id>`)
+- Delete a note (`DELETE /note/<id>`) - Not working
 - Notes are stored in Redis and persisted using Docker volumes
 
 ---
@@ -16,7 +19,7 @@ It was developed as part of a DevOps course assignment.
 
 - **Flask** – web framework (Python)
 - **Redis** – in-memory database for storing notes
-- **Docker Compose** – used to run and connect both services
+- **Docker Compose** – used to run and connect both services - forgot docker
 
 ---
 
@@ -24,10 +27,10 @@ It was developed as part of a DevOps course assignment.
 
 Make sure Docker and Docker Compose are installed.
 
-1. Clone the repo:
+1. Clone the repo: - missing how to run the project
 git clone https://github.com/100adim/notes_app_devops.git
 cd notes_app_devops
-Once running, the application will be accessible at: http://localhost:5000
+Once running, the application will be accessible at: http://localhost:5000 - 404 error - change to responsable path
 
 ## System Architecture
 
