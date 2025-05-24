@@ -3,7 +3,7 @@ import redis
 import json
 
 app = Flask(__name__)
-r = redis.Redis(host='redis', port=6379, decode_responses=True)
+r = redis.Redis(host='redis', port=6379, decode_responses=True) # Use meaningful names for variables, r can be redis_client
 
 
 def get_next_id():
@@ -50,7 +50,7 @@ def get_notes():
 
     return jsonify(notes), 200
 
-def delete_note(note_id):
+def delete_note(note_id): # Missinf route decorator (Can't call delete as API call)
     note_key = f'note:{note_id}'
     note_json = r.get(note_key)
 
